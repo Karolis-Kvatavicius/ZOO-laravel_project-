@@ -1,0 +1,101 @@
+body {
+    background-image: url("../img/zoo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 82vh;
+}
+
+h1, #goBack {
+    color: white;
+    text-shadow: 1px 1px black;
+    
+}
+
+.greeting {
+    background-color: rgba(8, 4, 4, 0.3);
+    margin-bottom: 45px;
+    border-radius: 5px;
+}
+
+.navbar, .navbar-expand-md, .navbar-light, .navbar-laravel {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#navbarDropdown {
+    color: white;
+}
+
+#filler {
+    height: 50px;
+}
+
+.container .navbar-toggler {
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+textarea {
+    width: auto;
+    height: 150px;
+    resize: none;
+}
+
+  @media only screen and (max-width: 1200px) {
+    textarea {
+        width: 400px;
+    }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        textarea {
+            width: 200px;
+        }
+    }
+
+    .animalEdit {
+        padding-right: 15px;
+    }
+
+footer {
+    text-align: center;
+    height: 80px;
+    background-color: black;
+    opacity: 0.5;
+    line-height: 63px;
+}
+
+.fa-angle-up {
+    font-weight: 900;
+    font-style: normal;
+    font-family: 'FontAwesome';
+    color: green;
+    cursor: pointer;
+}
