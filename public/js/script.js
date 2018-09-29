@@ -20,5 +20,14 @@ $(document).ready(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
   });
+
+  $("body").on('click', function() {
+    $('.card-header').css({
+      'background-color' : '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6),
+      'color' : 'white',
+      'text-shadow' : '1px 0px black',
+    });
+  });
+  
 });
 
