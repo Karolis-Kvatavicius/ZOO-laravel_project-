@@ -39,9 +39,11 @@
                         <label for="manager">Manager</label><br>
                         <select name="manager" id="selectManager">
                             @foreach ($managers as $manager)
-                            <option value="{{$manager->id}}" {{old('species') == $manager->id ? 'selected' : ''}}>
+                            @if ($manager->animals_type == old('species', 1) )
+                            <option value="{{$manager->id}}" {{old('manager') == $manager->id ? 'selected' : ''}}>
                                 {{$manager->name}} {{$manager->surname}}
                             </option>
+                            @endif
                             @endforeach
                             {{-- jquery ajax code from public/js/script.js --}}
                         </select><br><br>
