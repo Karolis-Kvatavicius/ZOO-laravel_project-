@@ -17,7 +17,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/species', 'SpeciesController@index')->name('animalSpecies');
 Route::post('/species', 'SpeciesController@store')->name('animalSpecies');
-Route::get('/speciesDelete/{id}', 'SpeciesController@destroy')->name('deleteSpecies');
+Route::get('/species/destroy/{species}', 'SpeciesController@destroy')->name('deleteSpecies');
 
 Route::get('/managers', 'ManagerController@index')->name('managers');
 Route::post('/managers', 'ManagerController@store')->name('managers');

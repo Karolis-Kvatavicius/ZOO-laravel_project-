@@ -93,9 +93,8 @@ class SpeciesController extends Controller
      * @param  \App\Species  $species
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Species $species)
     {
-        $species = Species::where('id', $id)->first();
         if($species->managers->count() > 0) {
             $errors = new MessageBag;
             $errors->add('error', 'This species can\'t be deleted,

@@ -80,8 +80,10 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer>
+        <footer> 
+            @if (Route::current()->getName() != 'login' && Route::current()->getName() != 'register')
                 <i class="fas fa-angle-up fa-5x"></i>
+            @endif      
         </footer>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
